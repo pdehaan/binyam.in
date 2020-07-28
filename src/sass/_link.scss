@@ -2,24 +2,24 @@ html {
     scroll-behavior: smooth;
 }
 
-a:not([class^=btn]) {
+:any-link {
     color: $clr-accent;
     
     &:hover {
-        color: $clr-accent;
+        text-decoration: none;
     }
 
     &:focus {
-        color: $clr-accent;
-        outline: none;
-        border: 1.5px solid transparent;
-        box-shadow: 0 0 0 1px $clr-accent;
-        border-radius: 4px;
+        outline: 4px solid currentColor;
+        outline-offset: 2px;
     }
+}
 
-    &.icon-link svg {
-        fill: currentColor;
-        width: 1em;
-        height: 1em;
+@mixin link-no-underline {
+    color: currentColor;
+    text-decoration: none;
+    
+    &:hover, &:focus {
+        color: $clr-accent;
     }
 }
