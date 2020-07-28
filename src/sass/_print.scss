@@ -59,8 +59,12 @@
         page-break-inside: avoid;
     }
 
-    a:not([class^=btn]), .post-details, code {
+    :any-link, .post-details, code {
         color: inherit;
+    }
+
+    :any-link {
+        text-decoration: none;
     }
 
 
