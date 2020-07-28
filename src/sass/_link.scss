@@ -3,7 +3,7 @@ html {
 }
 
 a:not([class^=btn]) {
-    color: $clr-accent--dark;
+    color: $clr-accent;
     
     &:hover {
         color: $clr-accent;
